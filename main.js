@@ -27,6 +27,7 @@ while (seguirComprado) {
 
     if (pedido) {
         compraTotal = compraTotal + pedido.precio
+
     } else {
         prompt("ingresaste un dato invalido")
     }
@@ -40,4 +41,12 @@ while (seguirComprado) {
     }
 
 }
-alert("El monto total de tu compra es de  " + compraTotal)
+
+let mensaje = document.getElementById("final")
+let mensajeFinal = document.createElement("p")
+mensajeFinal.innerText = `EL MONTO TOTAL DE TU COMPRA ES DE $ ${compraTotal} `
+
+mensaje.append(mensajeFinal)
+
+
+// alert("El monto total de tu compra es de  " + compraTotal)
